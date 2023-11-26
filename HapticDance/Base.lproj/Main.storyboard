@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Piece2 View Controller-->
+        <scene sceneID="H89-em-n8e">
+            <objects>
+                <viewController id="UKq-Rn-M3d" customClass="Piece2ViewController" customModule="HapticDance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nb9-3g-Rbd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="g19-KT-Afr">
+                                <rect key="frame" x="36" y="70" width="321" height="722"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kaleidoscope" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rW-V3-cSa">
+                                        <rect key="frame" x="0.0" y="0.0" width="321" height="157.33333333333334"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select a group of dancers to follow:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71c-ly-Dkl">
+                                        <rect key="frame" x="0.0" y="167.33333333333334" width="321" height="78.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1fA-09-4IW">
+                                        <rect key="frame" x="0.0" y="256" width="321" height="121"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="setDancerPiece2:" destination="UKq-Rn-M3d" eventType="valueChanged" id="RHw-RL-LCE"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the button below to start the haptics:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="e1D-6V-JyT">
+                                        <rect key="frame" x="0.0" y="386" width="321" height="78.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ccd-FM-JNj">
+                                        <rect key="frame" x="0.0" y="474.33333333333343" width="321" height="247.66666666666669"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Start!"/>
+                                        <connections>
+                                            <action selector="playPiece2AHAP:" destination="UKq-Rn-M3d" eventType="touchUpInside" id="RPT-eV-0Il"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eLR-9v-5Jy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eLR-9v-5Jy" firstAttribute="bottom" secondItem="g19-KT-Afr" secondAttribute="bottom" constant="50" id="77s-L8-MFp"/>
+                            <constraint firstItem="g19-KT-Afr" firstAttribute="top" secondItem="eLR-9v-5Jy" secondAttribute="top" constant="70" id="I7T-KW-sfw"/>
+                            <constraint firstItem="eLR-9v-5Jy" firstAttribute="trailing" secondItem="g19-KT-Afr" secondAttribute="trailing" constant="36" id="XNm-gu-HIw"/>
+                            <constraint firstItem="g19-KT-Afr" firstAttribute="leading" secondItem="eLR-9v-5Jy" secondAttribute="leading" constant="36" id="zRh-I6-AV2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ke3-SR-Zle"/>
+                    <connections>
+                        <outlet property="segOutletPiece2" destination="1fA-09-4IW" id="pwF-kE-mMB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nw0-ET-fZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-698" y="799"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HapticDance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5ZW-wD-9Mb">
+                                <rect key="frame" x="30" y="95" width="333" height="687"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5dW-uR-PBg">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="371"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome to Decoded Rhythms!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xap-mL-ziF">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="284.66666666666669"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XMM-qM-vK9">
+                                                <rect key="frame" x="0.0" y="289.66666666666669" width="333" height="81.333333333333314"/>
+                                                <string key="text">Please press the buttons below to access the haptic experience for "Time and Space," the modules demonstration, and "Kaleidoscope."</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FwI-5D-VTL">
+                                        <rect key="frame" x="0.0" y="391" width="333" height="296"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqP-Qf-Qx1">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="92"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Time and Space"/>
+                                                <connections>
+                                                    <segue destination="Rgb-tM-zLy" kind="show" id="Oeo-BP-eVu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdX-RI-0qi">
+                                                <rect key="frame" x="0.0" y="102" width="333" height="92"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Modules"/>
+                                                <connections>
+                                                    <segue destination="WAb-T2-IWc" kind="show" id="TVQ-Ib-qno"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myo-PT-mJp">
+                                                <rect key="frame" x="0.0" y="204" width="333" height="92"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Kaleidoscope"/>
+                                                <connections>
+                                                    <segue destination="UKq-Rn-M3d" kind="show" id="aPB-dG-L3L"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5ZW-wD-9Mb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="EnL-hW-2l2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5ZW-wD-9Mb" secondAttribute="trailing" constant="30" id="MyK-ye-v5R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5ZW-wD-9Mb" secondAttribute="bottom" constant="36" id="qN7-09-E59"/>
+                            <constraint firstItem="5ZW-wD-9Mb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="w2d-7n-vM0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-28.169014084507044"/>
+        </scene>
+        <!--Piece1 View Controller-->
+        <scene sceneID="zyy-fi-JPs">
+            <objects>
+                <viewController id="Rgb-tM-zLy" customClass="Piece1ViewController" customModule="HapticDance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M3X-NJ-RL9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lFg-EZ-V9h">
+                                <rect key="frame" x="36" y="70" width="321" height="722"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time and Space" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5f-uC-FSK">
+                                        <rect key="frame" x="0.0" y="0.0" width="321" height="157.33333333333334"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select a group of dancers to follow:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9v3-GD-S8c">
+                                        <rect key="frame" x="0.0" y="167.33333333333334" width="321" height="78.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="exs-k0-7vQ">
+                                        <rect key="frame" x="0.0" y="256" width="321" height="121"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="setDancer:" destination="Rgb-tM-zLy" eventType="valueChanged" id="r8m-2c-Dgq"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the button below to start the haptics:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mhh-YP-NOg">
+                                        <rect key="frame" x="0.0" y="386" width="321" height="78.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBf-vZ-bc8">
+                                        <rect key="frame" x="0.0" y="474.33333333333343" width="321" height="247.66666666666669"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Start!"/>
+                                        <connections>
+                                            <action selector="playPiece1AHAP:" destination="Rgb-tM-zLy" eventType="touchUpInside" id="8Pt-lm-Bin"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MgQ-I3-rci"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lFg-EZ-V9h" firstAttribute="leading" secondItem="MgQ-I3-rci" secondAttribute="leading" constant="36" id="Te1-Tc-9nH"/>
+                            <constraint firstItem="lFg-EZ-V9h" firstAttribute="top" secondItem="MgQ-I3-rci" secondAttribute="top" constant="70" id="fmU-Z4-rPe"/>
+                            <constraint firstItem="MgQ-I3-rci" firstAttribute="trailing" secondItem="lFg-EZ-V9h" secondAttribute="trailing" constant="36" id="gGR-HM-phu"/>
+                            <constraint firstItem="MgQ-I3-rci" firstAttribute="bottom" secondItem="lFg-EZ-V9h" secondAttribute="bottom" constant="50" id="lWx-Mg-KqX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WxS-0B-ncu"/>
+                    <connections>
+                        <outlet property="segControlOutlet" destination="exs-k0-7vQ" id="oca-RD-3hy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kiJ-F4-PzY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1206" y="-413"/>
+        </scene>
+        <!--Demo-->
+        <scene sceneID="jgR-2Z-aTh">
+            <objects>
+                <viewController title="Demo" id="WAb-T2-IWc" customClass="DemoViewController" customModule="HapticDance" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ya2-T4-kAv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hd7-23-e60">
+                                <rect key="frame" x="30" y="56" width="333" height="750"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please use the buttons below to access the haptic patterns for each module." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQH-X0-Mpf">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="81.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ez9-vc-vOW">
+                                        <rect key="frame" x="0.0" y="111.33333333333334" width="333" height="81.666666666666657"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Module 1"/>
+                                        <connections>
+                                            <segue destination="N9j-5i-BLs" kind="show" id="63W-0Q-3ab"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCs-Ua-qQn">
+                                        <rect key="frame" x="0.0" y="223.00000000000003" width="333" height="81.333333333333343"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Module 2"/>
+                                        <connections>
+                                            <segue destination="VDH-an-i38" kind="show" id="fcx-cY-Owg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgM-bK-TlS">
+                                        <rect key="frame" x="0.0" y="334.33333333333331" width="333" height="81.333333333333314"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Module 3"/>
+                                        <connections>
+                                            <segue destination="Xky-0b-7NT" kind="show" id="iFc-8N-9yy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBe-at-iPU">
+                                        <rect key="frame" x="0.0" y="445.66666666666669" width="333" height="81.333333333333314"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Module 4"/>
+                                        <connections>
+                                            <segue destination="V43-yk-Koj" kind="show" id="uel-AE-PoG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pt1-Qs-SlP">
+                                        <rect key="frame" x="0.0" y="557" width="333" height="81.666666666666629"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Module 5"/>
+                                        <connections>
+                                            <segue destination="8Cf-DR-uSI" kind="show" id="JqB-U3-MjF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbr-w6-vQk">
+                                        <rect key="frame" x="0.0" y="668.66666666666663" width="333" height="81.333333333333371"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Module 6"/>
+                                        <connections>
+                                            <segue destination="rZp-w9-akM" kind="show" id="xa2-3f-vEe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5xC-zb-ksl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hd7-23-e60" firstAttribute="leading" secondItem="5xC-zb-ksl" secondAttribute="leading" constant="30" id="EBm-Am-KaM"/>
+                            <constraint firstItem="5xC-zb-ksl" firstAttribute="bottom" secondItem="hd7-23-e60" secondAttribute="bottom" constant="36" id="KF7-un-SFZ"/>
+                            <constraint firstItem="5xC-zb-ksl" firstAttribute="trailing" secondItem="hd7-23-e60" secondAttribute="trailing" constant="30" id="cZS-9j-Npc"/>
+                            <constraint firstItem="hd7-23-e60" firstAttribute="top" secondItem="5xC-zb-ksl" secondAttribute="top" constant="56" id="qGW-PQ-n5Z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EXS-uv-6oJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMd-tk-TKk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1396" y="453"/>
+        </scene>
+        <!--Mod1 View Controller-->
+        <scene sceneID="B5n-0F-qQi">
+            <objects>
+                <viewController id="N9j-5i-BLs" customClass="Mod1ViewController" customModule="HapticDance" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DpG-2P-0U8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="H67-wK-aoE">
+                                <rect key="frame" x="36" y="70" width="321" height="722"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the buttons below to feel different haptic representations of Module 1!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffA-CI-46x">
+                                        <rect key="frame" x="0.0" y="0.0" width="321" height="173"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hco-aa-4bS">
+                                        <rect key="frame" x="0.0" y="183" width="321" height="173"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Continuous"/>
+                                        <connections>
+                                            <action selector="playDemo1AHAP1WithSender:" destination="N9j-5i-BLs" eventType="touchUpInside" id="gRB-5j-MGK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2P-mc-Ueg">
+                                        <rect key="frame" x="0.0" y="366" width="321" height="173"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Mixed"/>
+                                        <connections>
+                                            <action selector="playDemo1AHAP2WithSender:" destination="N9j-5i-BLs" eventType="touchUpInside" id="cAO-NK-nvv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73i-cI-5gy">
+                                        <rect key="frame" x="0.0" y="549" width="321" height="173"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Transient"/>
+                                        <connections>
+                                            <action selector="playDemo1AHAP3WithSender:" destination="N9j-5i-BLs" eventType="touchUpInside" id="qio-Cm-Kpb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VXJ-nJ-Q1A"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VXJ-nJ-Q1A" firstAttribute="trailing" secondItem="H67-wK-aoE" secondAttribute="trailing" constant="36" id="0Iv-vP-zMQ"/>
+                            <constraint firstItem="H67-wK-aoE" firstAttribute="leading" secondItem="VXJ-nJ-Q1A" secondAttribute="leading" constant="36" id="But-Xi-S73"/>
+                            <constraint firstItem="VXJ-nJ-Q1A" firstAttribute="bottom" secondItem="H67-wK-aoE" secondAttribute="bottom" constant="50" id="KPV-nt-WKM"/>
+                            <constraint firstItem="H67-wK-aoE" firstAttribute="top" secondItem="VXJ-nJ-Q1A" secondAttribute="top" constant="70" id="p3A-QR-duA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bvb-PZ-Y7I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4o-8Z-icE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2700" y="-555"/>
+        </scene>
+        <!--Mod2 View Controller-->
+        <scene sceneID="kAo-3h-Iih">
+            <objects>
+                <viewController id="VDH-an-i38" customClass="Mod2ViewController" customModule="HapticDance" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DX9-FX-rcT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ksq-eM-GI3">
+                                <rect key="frame" x="36" y="70" width="321" height="722"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the buttons below to feel different haptic representations of Module 2!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ6-b7-YDw">
+                                        <rect key="frame" x="0.0" y="0.0" width="321" height="173"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knd-J7-jsR">
+                                        <rect key="frame" x="0.0" y="183" width="321" height="173"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Continuous"/>
+                                        <connections>
+                                            <action selector="playDemo2AHAP1WithSender:" destination="VDH-an-i38" eventType="touchUpInside" id="J0A-g8-LdX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ref-Sh-gyN">
+                                        <rect key="frame" x="0.0" y="366" width="321" height="173"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Mixed"/>
+                                        <connections>
+                                            <action selector="playDemo2AHAP2WithSender:" destination="VDH-an-i38" eventType="touchUpInside" id="ix7-nC-4NN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lb5-wp-gcf">
+                                        <rect key="frame" x="0.0" y="549" width="321" height="173"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Transient"/>
+                                        <connections>
+                                            <action selector="playDemo2AHAP3WithSender:" destination="VDH-an-i38" eventType="touchUpInside" id="Ala-kl-Sgw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="laN-Xj-axp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ksq-eM-GI3" firstAttribute="top" secondItem="laN-Xj-axp" secondAttribute="top" constant="70" id="0H5-AN-czL"/>
+                            <constraint firstItem="laN-Xj-axp" firstAttribute="bottom" secondItem="ksq-eM-GI3" secondAttribute="bottom" constant="50" id="FaM-C1-zZ0"/>
+                            <constraint firstItem="ksq-eM-GI3" firstAttribute="leading" secondItem="laN-Xj-axp" secondAttribute="leading" constant="36" id="L08-zd-g1d"/>
+                            <constraint firstItem="laN-Xj-axp" firstAttribute="trailing" secondItem="ksq-eM-GI3" secondAttribute="trailing" constant="36" id="v6p-SX-3ap"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xkT-Of-sA0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTA-8z-ryp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3703" y="-210"/>
+        </scene>
+        <!--Mod6 View Controller-->
+        <scene sceneID="iaw-cc-8J8">
+            <objects>
+                <viewController id="rZp-w9-akM" customClass="Mod6ViewController" customModule="HapticDance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EJh-sE-SYS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nth-uC-a4L">
+                                <rect key="frame" x="36" y="70" width="321" height="722"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the button below to feel a haptic representation of Module 6!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21q-ce-5R2">
+                                        <rect key="frame" x="0.0" y="0.0" width="321" height="356"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOV-aN-EzA">
+                                        <rect key="frame" x="0.0" y="366" width="321" height="356"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Play"/>
+                                        <connections>
+                                            <action selector="playDemo6AHAP:" destination="rZp-w9-akM" eventType="touchUpInside" id="XTs-WK-L0x"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FFW-VP-id1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FFW-VP-id1" firstAttribute="bottom" secondItem="Nth-uC-a4L" secondAttribute="bottom" constant="50" id="HwW-7e-hxb"/>
+                            <constraint firstItem="FFW-VP-id1" firstAttribute="trailing" secondItem="Nth-uC-a4L" secondAttribute="trailing" constant="36" id="r3R-Zo-rhl"/>
+                            <constraint firstItem="Nth-uC-a4L" firstAttribute="top" secondItem="FFW-VP-id1" secondAttribute="top" constant="70" id="tyo-g6-kxO"/>
+                            <constraint firstItem="Nth-uC-a4L" firstAttribute="leading" secondItem="FFW-VP-id1" secondAttribute="leading" constant="36" id="uk4-uD-Fh7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bBQ-Xs-Wzf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdb-N8-8qu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1941" y="1370"/>
+        </scene>
+        <!--Mod5 View Controller-->
+        <scene sceneID="m03-TC-DmU">
+            <objects>
+                <viewController id="8Cf-DR-uSI" customClass="Mod5ViewController" customModule="HapticDance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OoH-HJ-jLk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ceV-gS-67b">
+                                <rect key="frame" x="36" y="70" width="321" height="722"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the buttons below to feel different haptic representations of Module 5!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIg-N5-Xdo">
+                                        <rect key="frame" x="0.0" y="0.0" width="321" height="234"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFw-ql-Ocy">
+                                        <rect key="frame" x="0.0" y="244" width="321" height="234"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Continuous"/>
+                                        <connections>
+                                            <action selector="playDemo5AHAP1WithSender:" destination="8Cf-DR-uSI" eventType="touchUpInside" id="8gt-iC-gPS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEQ-41-PLk">
+                                        <rect key="frame" x="0.0" y="488" width="321" height="234"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Mixed"/>
+                                        <connections>
+                                            <action selector="playDemo5AHAP2WithSender:" destination="8Cf-DR-uSI" eventType="touchUpInside" id="g95-Vb-X39"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s7w-Y7-Svk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s7w-Y7-Svk" firstAttribute="trailing" secondItem="ceV-gS-67b" secondAttribute="trailing" constant="36" id="1gw-s2-4fG"/>
+                            <constraint firstItem="ceV-gS-67b" firstAttribute="top" secondItem="s7w-Y7-Svk" secondAttribute="top" constant="70" id="ATh-6d-5vl"/>
+                            <constraint firstItem="s7w-Y7-Svk" firstAttribute="bottom" secondItem="ceV-gS-67b" secondAttribute="bottom" constant="50" id="jYO-V9-jpv"/>
+                            <constraint firstItem="ceV-gS-67b" firstAttribute="leading" secondItem="s7w-Y7-Svk" secondAttribute="leading" constant="36" id="uYj-oz-Fyf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tmd-lK-6W8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zgb-y1-dde" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="637" y="1370"/>
+        </scene>
+        <!--Mod4 View Controller-->
+        <scene sceneID="5XU-7y-6Y5">
+            <objects>
+                <viewController id="V43-yk-Koj" customClass="Mod4ViewController" customModule="HapticDance" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qeM-fU-giL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="X11-pJ-eLH">
+                                <rect key="frame" x="36" y="70" width="321" height="722"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the buttons below to feel different haptic representations of Module 4!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Nd-Sn-jpy">
+                                        <rect key="frame" x="0.0" y="0.0" width="321" height="234"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAo-jY-aLI">
+                                        <rect key="frame" x="0.0" y="244" width="321" height="234"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Continuous #1"/>
+                                        <connections>
+                                            <action selector="playDemo4AHAP1WithSender:" destination="V43-yk-Koj" eventType="touchUpInside" id="jYk-pQ-Ix1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSk-BJ-g2E">
+                                        <rect key="frame" x="0.0" y="488" width="321" height="234"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Continuous #2"/>
+                                        <connections>
+                                            <action selector="playDemo4AHAP2WithSender:" destination="V43-yk-Koj" eventType="touchUpInside" id="PC7-Sc-ejs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cg4-1p-H1R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X11-pJ-eLH" firstAttribute="leading" secondItem="Cg4-1p-H1R" secondAttribute="leading" constant="36" id="AMz-gq-li4"/>
+                            <constraint firstItem="Cg4-1p-H1R" firstAttribute="bottom" secondItem="X11-pJ-eLH" secondAttribute="bottom" constant="50" id="sfy-RU-ir5"/>
+                            <constraint firstItem="Cg4-1p-H1R" firstAttribute="trailing" secondItem="X11-pJ-eLH" secondAttribute="trailing" constant="36" id="siu-JT-TP8"/>
+                            <constraint firstItem="X11-pJ-eLH" firstAttribute="top" secondItem="Cg4-1p-H1R" secondAttribute="top" constant="70" id="x2R-tJ-1hS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xqw-eI-eM7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GU3-Pz-bNF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3175" y="986"/>
+        </scene>
+        <!--Mod3 View Controller-->
+        <scene sceneID="kRV-UV-XQs">
+            <objects>
+                <viewController id="Xky-0b-7NT" customClass="Mod3ViewController" customModule="HapticDance" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U4p-2B-5b2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sYD-B3-zA3">
+                                <rect key="frame" x="36" y="70" width="321" height="722"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the buttons below to feel different haptic representations of Module 3!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncv-ov-BpR">
+                                        <rect key="frame" x="0.0" y="0.0" width="321" height="173"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65L-DF-0Vf">
+                                        <rect key="frame" x="0.0" y="183" width="321" height="173"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Continuous"/>
+                                        <connections>
+                                            <action selector="playDemo3AHAP1WithSender:" destination="Xky-0b-7NT" eventType="touchUpInside" id="5Y9-Df-xFK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgV-Km-4JS">
+                                        <rect key="frame" x="0.0" y="366" width="321" height="173"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Mixed"/>
+                                        <connections>
+                                            <action selector="playDemo3AHAP2WithSender:" destination="Xky-0b-7NT" eventType="touchUpInside" id="hLw-KS-Ib3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IF9-iA-Rog">
+                                        <rect key="frame" x="0.0" y="549" width="321" height="173"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Transient"/>
+                                        <connections>
+                                            <action selector="playDemo3AHAP3WithSender:" destination="Xky-0b-7NT" eventType="touchUpInside" id="a9W-ea-afg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WuL-2d-kk6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WuL-2d-kk6" firstAttribute="trailing" secondItem="sYD-B3-zA3" secondAttribute="trailing" constant="36" id="7yu-z6-pof"/>
+                            <constraint firstItem="WuL-2d-kk6" firstAttribute="bottom" secondItem="sYD-B3-zA3" secondAttribute="bottom" constant="50" id="Fue-m7-oPb"/>
+                            <constraint firstItem="sYD-B3-zA3" firstAttribute="top" secondItem="WuL-2d-kk6" secondAttribute="top" constant="70" id="Kl3-Zb-wTC"/>
+                            <constraint firstItem="sYD-B3-zA3" firstAttribute="leading" secondItem="WuL-2d-kk6" secondAttribute="leading" constant="36" id="uoe-XD-3EP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1op-kj-bQt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FTw-kU-hH5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3920" y="485"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

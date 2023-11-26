@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAi3O3mNKSlEaMDNKFbGWm4Qyo1FN0N_5M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>778752285571</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.igomezhj.HapticDance</string>
+	<key>PROJECT_ID</key>
+	<string>hapticdancepush</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hapticdancepush.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<true/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:778752285571:ios:464bc08c82a22569c0f4b6</string>
+</dict>
+</plist>
