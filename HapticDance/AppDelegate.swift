@@ -59,14 +59,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
         }
     }
     
-    func application(_ application: UIApplication,
-                   didReceiveRemoteNotification userInfo: [AnyHashable : Any],
-                   fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        if let stringData = userInfo["startTime"] as? String {
-          print("Time: \(stringData)")
+    // Handle foreground notifications
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                willPresent notification: UNNotification,
+                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+
+        let userInfo = notification.request.content.userInfo
+        // Process your "start time" data here
+        if let startTime = userInfo["startTime"] as? String {
+            // Trigger the action based on start time
+            scheduleAction(startTime: startTime)
         }
+        
+        // Since you're using the notification to send data, you might not need to present the notification
+        completionHandler([])
+    }
+
+    // Handle background notifications
+    func application(_ application: UIApplication,
+                     didReceiveRemoteNotification userInfo: [AnyHashable: Any],
+                     fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+        if let startTime = userInfo["startTime"] as? String {
+            // Trigger the action based on start time
+            scheduleAction(startTime: startTime)
+        }
+        
+        // Since you're using the notification to send data, you might not need to present the notification
         completionHandler(.newData)
+    }
+    
+    private func scheduleAction(startTime: String) {
+        // Schedule your action here based on the start time
     }
 
 }
-
