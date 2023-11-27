@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		154133B08451924FFDA190BF /* Pods_HapticDance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F54BB0B1F4436821B395341 /* Pods_HapticDance.framework */; };
 		3A036C372B1285C9002FB8B9 /* Mod1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A036C362B1285C9002FB8B9 /* Mod1ViewController.swift */; };
 		3A036C392B1285D3002FB8B9 /* Mod2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A036C382B1285D3002FB8B9 /* Mod2ViewController.swift */; };
 		3A036C3B2B1285DC002FB8B9 /* Mod3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A036C3A2B1285DC002FB8B9 /* Mod3ViewController.swift */; };
@@ -15,6 +16,7 @@
 		3A036C412B1285FC002FB8B9 /* Mod6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A036C402B1285FC002FB8B9 /* Mod6ViewController.swift */; };
 		3A036C432B128BBE002FB8B9 /* Piece1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A036C422B128BBE002FB8B9 /* Piece1ViewController.swift */; };
 		3A036C452B12943A002FB8B9 /* Piece2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A036C442B12943A002FB8B9 /* Piece2ViewController.swift */; };
+		3A1E17082B14355A00937E70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A1E17072B14355A00937E70 /* GoogleService-Info.plist */; };
 		3A70495B2B0BC8EF00D0A9A8 /* AHAP in Resources */ = {isa = PBXBuildFile; fileRef = 3A70495A2B0BC8EF00D0A9A8 /* AHAP */; };
 		3A9EA3CC2B06D2E90010CA33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EA3CB2B06D2E90010CA33 /* AppDelegate.swift */; };
 		3A9EA3CE2B06D2E90010CA33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EA3CD2B06D2E90010CA33 /* SceneDelegate.swift */; };
@@ -27,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2320F30AEC3FB15B17D91EDB /* Pods-HapticDance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapticDance.debug.xcconfig"; path = "Target Support Files/Pods-HapticDance/Pods-HapticDance.debug.xcconfig"; sourceTree = "<group>"; };
 		3A036C362B1285C9002FB8B9 /* Mod1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mod1ViewController.swift; sourceTree = "<group>"; };
 		3A036C382B1285D3002FB8B9 /* Mod2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mod2ViewController.swift; sourceTree = "<group>"; };
 		3A036C3A2B1285DC002FB8B9 /* Mod3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mod3ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 		3A036C402B1285FC002FB8B9 /* Mod6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mod6ViewController.swift; sourceTree = "<group>"; };
 		3A036C422B128BBE002FB8B9 /* Piece1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece1ViewController.swift; sourceTree = "<group>"; };
 		3A036C442B12943A002FB8B9 /* Piece2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece2ViewController.swift; sourceTree = "<group>"; };
+		3A1E17072B14355A00937E70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A70495A2B0BC8EF00D0A9A8 /* AHAP */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AHAP; sourceTree = "<group>"; };
 		3A9EA3C82B06D2E90010CA33 /* HapticDance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticDance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9EA3CB2B06D2E90010CA33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		3A9EA3DF2B06D49F0010CA33 /* HapticDance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HapticDance.entitlements; sourceTree = "<group>"; };
 		3AC8C7772B0A850300D8FE06 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		3AC8C7792B0A8B0200D8FE06 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		8A0D1E6D0C5A3D5B29D421C0 /* Pods-HapticDance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapticDance.release.xcconfig"; path = "Target Support Files/Pods-HapticDance/Pods-HapticDance.release.xcconfig"; sourceTree = "<group>"; };
+		8F54BB0B1F4436821B395341 /* Pods_HapticDance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HapticDance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,18 +61,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AC8C77A2B0A8B0200D8FE06 /* AdSupport.framework in Frameworks */,
+				154133B08451924FFDA190BF /* Pods_HapticDance.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		343D87AD20D082D114DF8E20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2320F30AEC3FB15B17D91EDB /* Pods-HapticDance.debug.xcconfig */,
+				8A0D1E6D0C5A3D5B29D421C0 /* Pods-HapticDance.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3A9EA3BF2B06D2E90010CA33 = {
 			isa = PBXGroup;
 			children = (
 				3A9EA3CA2B06D2E90010CA33 /* HapticDance */,
 				3A9EA3C92B06D2E90010CA33 /* Products */,
 				F5E6606570FDBC3981490F35 /* Frameworks */,
+				343D87AD20D082D114DF8E20 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +115,7 @@
 				3A9EA3D12B06D2E90010CA33 /* Main.storyboard */,
 				3A9EA3D42B06D2EA0010CA33 /* Assets.xcassets */,
 				3A9EA3D62B06D2EA0010CA33 /* LaunchScreen.storyboard */,
+				3A1E17072B14355A00937E70 /* GoogleService-Info.plist */,
 				3A9EA3D92B06D2EA0010CA33 /* Info.plist */,
 			);
 			path = HapticDance;
@@ -107,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				3AC8C7792B0A8B0200D8FE06 /* AdSupport.framework */,
+				8F54BB0B1F4436821B395341 /* Pods_HapticDance.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A9EA3DC2B06D2EA0010CA33 /* Build configuration list for PBXNativeTarget "HapticDance" */;
 			buildPhases = (
+				753458D0EFD58B5B7D342E68 /* [CP] Check Pods Manifest.lock */,
 				3A9EA3C42B06D2E90010CA33 /* Sources */,
 				3A9EA3C52B06D2E90010CA33 /* Frameworks */,
 				3A9EA3C62B06D2E90010CA33 /* Resources */,
+				31DF111E4AF9C3BF2FEAAD79 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,12 +192,55 @@
 			files = (
 				3A9EA3D82B06D2EA0010CA33 /* LaunchScreen.storyboard in Resources */,
 				3A70495B2B0BC8EF00D0A9A8 /* AHAP in Resources */,
+				3A1E17082B14355A00937E70 /* GoogleService-Info.plist in Resources */,
 				3A9EA3D52B06D2EA0010CA33 /* Assets.xcassets in Resources */,
 				3A9EA3D32B06D2E90010CA33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31DF111E4AF9C3BF2FEAAD79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HapticDance/Pods-HapticDance-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HapticDance/Pods-HapticDance-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HapticDance/Pods-HapticDance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		753458D0EFD58B5B7D342E68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HapticDance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A9EA3C42B06D2E90010CA33 /* Sources */ = {
@@ -336,10 +400,12 @@
 		};
 		3A9EA3DD2B06D2EA0010CA33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2320F30AEC3FB15B17D91EDB /* Pods-HapticDance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HapticDance/HapticDance.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9GK5PVPDP5;
@@ -359,6 +425,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.igomezhj.HapticDance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -367,10 +434,12 @@
 		};
 		3A9EA3DE2B06D2EA0010CA33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A0D1E6D0C5A3D5B29D421C0 /* Pods-HapticDance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HapticDance/HapticDance.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9GK5PVPDP5;
@@ -390,6 +459,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.igomezhj.HapticDance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
