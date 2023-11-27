@@ -8,7 +8,7 @@
 import Firebase
 //import FirebaseAuth
 import FirebaseCore
-import FirebaseFirestone
+//import FirebaseFirestone
 import FirebaseMessaging
 import UserNotifications
 import UIKit
@@ -59,14 +59,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
         }
     }
     
-//    func application(_ application: UIApplication,
-//                   didReceiveRemoteNotification userInfo: [AnyHashable : Any],
-//                   fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-//        if let stringData = userInfo["startTime"] as? String {
-//          print("Time: \(stringData)")
-//        }
-//        completionHandler(.newData)
-//    }
+    func application(_ application: UIApplication,
+                   didReceiveRemoteNotification userInfo: [AnyHashable : Any],
+                   fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        if let stringData = userInfo["startTime"] as? String {
+          print("Time: \(stringData)")
+        }
+        completionHandler(.newData)
+    }
 
 }
 
