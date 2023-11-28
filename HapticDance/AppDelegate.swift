@@ -15,7 +15,6 @@ import UIKit
 import CoreHaptics
 import AVFoundation
 
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUserNotificationCenterDelegate {
     
@@ -68,7 +67,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
         // Process your "start time" data here
         if let startTime = userInfo["startTime"] as? String {
             // Trigger the action based on start time
-            scheduleAction(startTime: startTime)
+            print(startTime)
+            
+            let info = startTime.split(separator: ",")
+            let time = String(info[0])
+            let piece = String(info[1])
+            
+            scheduleAction(time: time, piece: piece)
         }
         
         // Since you're using the notification to send data, you might not need to present the notification
@@ -82,15 +87,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
         
         if let startTime = userInfo["startTime"] as? String {
             // Trigger the action based on start time
-            scheduleAction(startTime: startTime)
+            print(startTime)
+            
+            let info = startTime.split(separator: ",")
+            let time = String(info[0])
+            let piece = String(info[1])
+            
+            scheduleAction(time: time, piece: piece)
         }
         
         // Since you're using the notification to send data, you might not need to present the notification
         completionHandler(.newData)
     }
     
-    private func scheduleAction(startTime: String) {
-        // Schedule your action here based on the start time
+    
+    
+    // Set timer to play AHAP file
+    private func scheduleAction(time: String, piece: String) {
+        print(time)
+        print(piece)
+        
+        // grab selected dancer from ViewController
+        var ViewController = ViewController()
+//        let dancerMain = ViewController.dancerMain
+        
+        let dancerMain = ViewController.segDancersMain.selectedSegmentIndex
+        print(dancerMain)
+        
+//        let file = "AHAP/Choreos/" + piece + "_p" + dancerMain
+//        print(file)
+//        ViewController.playHapticsFile(named: file)
+        
+        // change time format
+//        let start = "23, Nov 27, " + time
+//        let DateFormatter = DateFormatter()
+//        DateFormatter.dateFormat = "YY, MMM dd, hh:mm"
+//        let sttime = DateFormatter.date(from: start)!
+//        print(sttime)
+        
+        // set timer to play ahap file
+//        let timer = Timer(fireAt: sttime, interval: 0, target: self, selector: #selector(playAHAP), userInfo: nil, repeats: false)
     }
 
 }

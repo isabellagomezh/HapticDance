@@ -23,9 +23,9 @@
 		3A9EA3D32B06D2E90010CA33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9EA3D12B06D2E90010CA33 /* Main.storyboard */; };
 		3A9EA3D52B06D2EA0010CA33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9EA3D42B06D2EA0010CA33 /* Assets.xcassets */; };
 		3A9EA3D82B06D2EA0010CA33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9EA3D62B06D2EA0010CA33 /* LaunchScreen.storyboard */; };
+		3AC6FB772B146F81002E972D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AC6FB762B146F81002E972D /* GoogleService-Info.plist */; };
 		3AC8C7782B0A850300D8FE06 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8C7772B0A850300D8FE06 /* DemoViewController.swift */; };
 		3AC8C77A2B0A8B0200D8FE06 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC8C7792B0A8B0200D8FE06 /* AdSupport.framework */; };
-		3F256BB62B145A9500D2B0B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F256BB52B145A9500D2B0B0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,9 +48,9 @@
 		3A9EA3D72B06D2EA0010CA33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A9EA3D92B06D2EA0010CA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A9EA3DF2B06D49F0010CA33 /* HapticDance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HapticDance.entitlements; sourceTree = "<group>"; };
+		3AC6FB762B146F81002E972D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3AC8C7772B0A850300D8FE06 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		3AC8C7792B0A8B0200D8FE06 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		3F256BB52B145A9500D2B0B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/Washington Post Police Data Filters/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A0D1E6D0C5A3D5B29D421C0 /* Pods-HapticDance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapticDance.release.xcconfig"; path = "Target Support Files/Pods-HapticDance/Pods-HapticDance.release.xcconfig"; sourceTree = "<group>"; };
 		8F54BB0B1F4436821B395341 /* Pods_HapticDance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HapticDance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,7 +115,7 @@
 				3A9EA3D12B06D2E90010CA33 /* Main.storyboard */,
 				3A9EA3D42B06D2EA0010CA33 /* Assets.xcassets */,
 				3A9EA3D62B06D2EA0010CA33 /* LaunchScreen.storyboard */,
-				3F256BB52B145A9500D2B0B0 /* GoogleService-Info.plist */,
+				3AC6FB762B146F81002E972D /* GoogleService-Info.plist */,
 				3A9EA3D92B06D2EA0010CA33 /* Info.plist */,
 			);
 			path = HapticDance;
@@ -192,9 +192,9 @@
 			files = (
 				3A9EA3D82B06D2EA0010CA33 /* LaunchScreen.storyboard in Resources */,
 				3A70495B2B0BC8EF00D0A9A8 /* AHAP in Resources */,
+				3AC6FB772B146F81002E972D /* GoogleService-Info.plist in Resources */,
 				3A9EA3D52B06D2EA0010CA33 /* Assets.xcassets in Resources */,
 				3A9EA3D32B06D2E90010CA33 /* Main.storyboard in Resources */,
-				3F256BB62B145A9500D2B0B0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

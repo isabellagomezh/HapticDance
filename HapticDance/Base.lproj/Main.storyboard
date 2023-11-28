@@ -90,16 +90,16 @@
                                 <rect key="frame" x="30" y="95" width="333" height="687"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5dW-uR-PBg">
-                                        <rect key="frame" x="0.0" y="0.0" width="333" height="217"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="174.33333333333334"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome to Decoded Rhythms!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xap-mL-ziF">
-                                                <rect key="frame" x="0.0" y="0.0" width="333" height="130.66666666666666"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Decoded Rhythms!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xap-mL-ziF">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="81.666666666666671"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XMM-qM-vK9">
-                                                <rect key="frame" x="0.0" y="135.66666666666666" width="333" height="81.333333333333343"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XMM-qM-vK9">
+                                                <rect key="frame" x="0.0" y="86.666666666666657" width="333" height="87.666666666666657"/>
                                                 <string key="text">Please press the buttons below to access the haptic experience for "Time and Space," the modules demonstration, and "Kaleidoscope."</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -107,11 +107,21 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="crK-4A-uu3">
+                                        <rect key="frame" x="0.0" y="194.33333333333331" width="333" height="83"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="setDancerMain:" destination="BYZ-38-t0r" eventType="valueChanged" id="IAI-Hj-AXc"/>
+                                        </connections>
+                                    </segmentedControl>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FwI-5D-VTL">
-                                        <rect key="frame" x="0.0" y="237" width="333" height="450"/>
+                                        <rect key="frame" x="0.0" y="296.33333333333326" width="333" height="390.66666666666674"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqP-Qf-Qx1">
-                                                <rect key="frame" x="0.0" y="0.0" width="333" height="143.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="123.66666666666667"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="Time and Space"/>
@@ -120,7 +130,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdX-RI-0qi">
-                                                <rect key="frame" x="0.0" y="153.33333333333331" width="333" height="143.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="133.66666666666669" width="333" height="123.33333333333331"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="Modules"/>
@@ -129,7 +139,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myo-PT-mJp">
-                                                <rect key="frame" x="0.0" y="306.66666666666663" width="333" height="143.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="267.00000000000006" width="333" height="123.66666666666669"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="Kaleidoscope"/>
@@ -151,6 +161,9 @@
                             <constraint firstItem="5ZW-wD-9Mb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="w2d-7n-vM0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="segDancersMain" destination="crK-4A-uu3" id="rGv-AJ-iVd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

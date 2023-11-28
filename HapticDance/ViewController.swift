@@ -114,5 +114,22 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBOutlet var segDancersMain: UISegmentedControl!
+    var dancerMain = "1"
+    
+    @IBAction func setDancerMain(_ sender: UISegmentedControl) {
+        switch segDancersMain.selectedSegmentIndex {
+        case 0:
+            dancerMain = "1"
+            print(dancerMain)
+            
+        case 1:
+            dancerMain = "2"
+            print(dancerMain)
+
+        default:
+            break
+        }
+    }
 }
 
