@@ -1,23 +1,15 @@
 //
-//  DemoViewController.swift
+//  BackupViewController.swift
 //  HapticDance
 //
-//  Created by Isabella Gomez on 11/19/23.
+//  Created by Isabella Gomez on 11/29/23.
 //
 
 import UIKit
 import CoreHaptics
+import AVFoundation
 
-class DemoViewController: UIViewController {
-    
-    // A haptic engine manages the connection to the haptic server.
-    var engine: CHHapticEngine?
-    
-    // Maintain a variable to check for Core Haptics compatibility on device.
-    lazy var supportsHaptics: Bool = {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        return appDelegate.supportsHaptics
-    }()
+class BackupViewController: UIViewController {
     
     // Set the status bar white to show up on a black background.
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -37,6 +29,5 @@ class DemoViewController: UIViewController {
             overrideUserInterfaceStyle = .dark
         }
     }
-
     
 }

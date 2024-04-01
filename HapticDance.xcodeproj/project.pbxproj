@@ -16,6 +16,7 @@
 		3A036C412B1285FC002FB8B9 /* Mod6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A036C402B1285FC002FB8B9 /* Mod6ViewController.swift */; };
 		3A036C432B128BBE002FB8B9 /* Piece1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A036C422B128BBE002FB8B9 /* Piece1ViewController.swift */; };
 		3A036C452B12943A002FB8B9 /* Piece2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A036C442B12943A002FB8B9 /* Piece2ViewController.swift */; };
+		3A6840532B178C3000AAD4C1 /* BackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6840522B178C3000AAD4C1 /* BackupViewController.swift */; };
 		3A70495B2B0BC8EF00D0A9A8 /* AHAP in Resources */ = {isa = PBXBuildFile; fileRef = 3A70495A2B0BC8EF00D0A9A8 /* AHAP */; };
 		3A9EA3CC2B06D2E90010CA33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EA3CB2B06D2E90010CA33 /* AppDelegate.swift */; };
 		3A9EA3CE2B06D2E90010CA33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EA3CD2B06D2E90010CA33 /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 		3A036C402B1285FC002FB8B9 /* Mod6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mod6ViewController.swift; sourceTree = "<group>"; };
 		3A036C422B128BBE002FB8B9 /* Piece1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece1ViewController.swift; sourceTree = "<group>"; };
 		3A036C442B12943A002FB8B9 /* Piece2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece2ViewController.swift; sourceTree = "<group>"; };
+		3A6840522B178C3000AAD4C1 /* BackupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupViewController.swift; sourceTree = "<group>"; };
 		3A70495A2B0BC8EF00D0A9A8 /* AHAP */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AHAP; sourceTree = "<group>"; };
 		3A9EA3C82B06D2E90010CA33 /* HapticDance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticDance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9EA3CB2B06D2E90010CA33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				3A9EA3CB2B06D2E90010CA33 /* AppDelegate.swift */,
 				3A9EA3CD2B06D2E90010CA33 /* SceneDelegate.swift */,
 				3A9EA3CF2B06D2E90010CA33 /* ViewController.swift */,
+				3A6840522B178C3000AAD4C1 /* BackupViewController.swift */,
 				3A036C422B128BBE002FB8B9 /* Piece1ViewController.swift */,
 				3A036C442B12943A002FB8B9 /* Piece2ViewController.swift */,
 				3AC8C7772B0A850300D8FE06 /* DemoViewController.swift */,
@@ -251,6 +254,7 @@
 				3A036C392B1285D3002FB8B9 /* Mod2ViewController.swift in Sources */,
 				3A036C432B128BBE002FB8B9 /* Piece1ViewController.swift in Sources */,
 				3A9EA3D02B06D2E90010CA33 /* ViewController.swift in Sources */,
+				3A6840532B178C3000AAD4C1 /* BackupViewController.swift in Sources */,
 				3A036C412B1285FC002FB8B9 /* Mod6ViewController.swift in Sources */,
 				3A9EA3CC2B06D2E90010CA33 /* AppDelegate.swift in Sources */,
 				3A9EA3CE2B06D2E90010CA33 /* SceneDelegate.swift in Sources */,

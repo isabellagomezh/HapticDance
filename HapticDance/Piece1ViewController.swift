@@ -35,6 +35,11 @@ class Piece1ViewController: UIViewController {
         
         // Create the engine before doing anything else.
         createEngine()
+        
+        // Force the app to use dark mode
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .dark
+        }
     }
     
     /// - Tag: CreateEngine
@@ -134,4 +139,7 @@ class Piece1ViewController: UIViewController {
         playHapticsFile(named: file)
     }
     
+    @IBAction func changeButtonColor(_ sender: UIButton) {
+        sender.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+    }
 }

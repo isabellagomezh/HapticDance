@@ -35,6 +35,11 @@ class ViewController: UIViewController {
         
         // Create the engine before doing anything else.
         createEngine()
+        
+        // Force the app to use dark mode
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .dark
+        }
     }
     
     /// - Tag: CreateEngine
